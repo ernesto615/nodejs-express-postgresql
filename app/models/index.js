@@ -42,6 +42,7 @@ db.sequelize = sequelize;
 // Registramos el modelo de cliente en el objeto db
 db.clientes = require("./cliente.model.js")(sequelize, Sequelize);
 
+// Registramos el modelo de pagos (Stripe)
 db.pagos = require("./pago.model.js")(sequelize, Sequelize);
 
 // Aquí puedes seguir registrando otros modelos de forma similar
